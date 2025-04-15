@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import credImage from "../assets/credimg.jpg" 
 
 const Hero = () => {
   return (
@@ -34,10 +35,7 @@ const Hero = () => {
               Learn More
             </motion.button>
           </div>
-          {/* <div className="app-badges">
-            <img src="/images/app-store.svg" alt="App Store" />
-            <img src="/images/play-store.svg" alt="Play Store" />
-          </div> */}
+   
         </motion.div>
         
         <motion.div
@@ -47,7 +45,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
            <motion.img 
-            src="src/assets/credimg.jpg" 
+            src={credImage}
             alt="CredCoins" 
             animate={{ y: [0, -20, 0] }}
             transition={{ duration: 6, repeat: Infinity }}

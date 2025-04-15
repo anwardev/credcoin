@@ -1,6 +1,7 @@
 // components/Header.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
+import logo from "../assets/credifin.png"
 
 
 const Header = () => {
@@ -13,7 +14,7 @@ const Header = () => {
         >
             <div className="container">
                 <div className="logo">
-                    <img src="src/assets/credifin.png" className='' alt="credifin" />
+                    <img src={logo} alt="credifin" />
                 </div>
                 <nav className="nav">
                     <ul>
