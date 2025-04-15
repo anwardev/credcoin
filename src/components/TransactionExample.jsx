@@ -44,6 +44,7 @@ const TransactionExamples = () => {
               {type.name}
             </button>
           ))}
+          
         </div>
         {/* Examples Display */}
         <AnimatePresence mode="wait">
