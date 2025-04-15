@@ -28,6 +28,7 @@ const TransactionExamples = () => {
       ],
     },
   ];
+  
 
   return (
     <section className="transaction-examples">
@@ -44,7 +45,7 @@ const TransactionExamples = () => {
               {type.name}
             </button>
           ))}
-          
+
         </div>
         {/* Examples Display */}
         <AnimatePresence mode="wait">
