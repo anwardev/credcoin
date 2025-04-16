@@ -4,6 +4,9 @@ import Hero from './components/Hero';
 import HowItWorks from './components/HowItWorks';
 import Benefits from './components/Benefits';
 import TransactionExamples from './components/TransactionExample';
+import Testimonials from './components/Testimonial';
+import CTA from './components/CTA';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -13,9 +16,9 @@ function App() {
       <HowItWorks />
       <Benefits />
       <TransactionExamples />
-      {/* <Testimonials /> */}
-      {/* <CTA /> */}
-      {/* <Footer /> */}
+      <Testimonials />
+      <CTA />
+      <Footer />
     </div>
   );
 }
