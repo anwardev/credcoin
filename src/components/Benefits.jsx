@@ -1,25 +1,27 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { GiChart, GiMoneyStack, GiStarsStack } from 'react-icons/gi';
+import { MdCached } from 'react-icons/md';
 
 const Benefits = () => {
   const benefits = [
     {
-      icon: '💰',
+      icon: <GiMoneyStack size={40} style={{ color: '#3066ff' }}  />,
       title: 'Savings Boost',
       description: 'Redeem coins for cashback and discounts'
     },
     {
-      icon: '📈',
+      icon: <GiChart size={40} style={{ color: '#2d3748' }} />,
       title: 'Credit Score',
       description: 'Improve your score with responsible behavior'
     },
     {
-      icon: '⭐',
+      icon: <GiStarsStack size={40} style={{ color: '#ffbe00' }} />,
       title: 'Exclusive Perks',
       description: 'Access premium offers and VIP benefits'
     },
     {
-      icon: '🔄',
+      icon: <MdCached size={40} style={{ color: '#3066ff' }} />,
       title: 'Flexible Redemption',
       description: 'Use coins across multiple reward categories'
     }

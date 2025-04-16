@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import logo from "../assets/credifin.png"
+
 
 const Footer = () => {
   const containerVariants = {
@@ -33,7 +35,7 @@ const Footer = () => {
   };
 
   return (
-    <motion.footer 
+    <motion.footer
       className="footer"
       initial="hidden"
       whileInView="visible"
@@ -42,14 +44,15 @@ const Footer = () => {
     >
       <div className="container">
         <motion.div className="footer-content" variants={containerVariants}>
-          <motion.div 
-            className="footer-logo"
+          <motion.div
+            className="logo"
             variants={itemVariants}
             whileHover={{ scale: 1.05 }}
           >
-            <span className="cred">Cred</span><span className="finance">Finance</span>
+            <img src={logo} alt="credifin" />
+
           </motion.div>
-          
+
           <motion.div className="footer-links" variants={containerVariants}>
             <motion.div className="links-column" variants={itemVariants}>
               <h4>Company</h4>
@@ -59,7 +62,7 @@ const Footer = () => {
                 <motion.li variants={itemVariants}><a href="#">Blog</a></motion.li>
               </ul>
             </motion.div>
-            
+
             <motion.div className="links-column" variants={itemVariants}>
               <h4>Legal</h4>
               <ul>
@@ -68,7 +71,7 @@ const Footer = () => {
                 <motion.li variants={itemVariants}><a href="#">Security</a></motion.li>
               </ul>
             </motion.div>
-            
+
             <motion.div className="links-column" variants={itemVariants}>
               <h4>Support</h4>
               <ul>
@@ -79,8 +82,8 @@ const Footer = () => {
             </motion.div>
           </motion.div>
         </motion.div>
-        
-        <motion.div 
+
+        <motion.div
           className="footer-bottom"
           variants={containerVariants}
         >
@@ -89,7 +92,7 @@ const Footer = () => {
           </motion.p>
           <motion.div className="social-icons">
             {['facebook', 'twitter', 'instagram', 'linkedin'].map((icon, index) => (
-              <motion.a 
+              <motion.a
                 key={index}
                 href="#"
                 variants={itemVariants}

@@ -1,6 +1,10 @@
 // components/Testimonials.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
+import img1 from "../assets/1.jpg"
+import img2 from "../assets/2.jpg"
+import img3 from "../assets/3.jpg"
+import { img } from 'framer-motion/client';
 
 const Testimonials = () => {
   const testimonials = [
@@ -8,19 +12,19 @@ const Testimonials = () => {
       name: 'Rahul Sharma',
       role: 'Credit Card User',
       quote: 'Earned 2,500 CredCoins in 3 months! Redeemed them for flight discounts.',
-      avatar: '/images/avatar1.jpg'
+      avatar: (img2)
     },
     {
       name: 'Priya Patel',
       role: 'Loan Customer',
       quote: 'The bonus coins for early EMI payments helped improve my credit score significantly.',
-      avatar: '/images/avatar2.jpg'
+      avatar: (img1)
     },
     {
       name: 'Vikram Mehta',
       role: 'Premium Member',
       quote: 'Exclusive perks for high coin holders are amazing. Got VIP lounge access at airports.',
-      avatar: '/images/avatar3.jpg'
+      avatar: (img3)
     }
   ];
 
